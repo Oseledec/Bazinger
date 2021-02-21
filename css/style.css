@@ -1,27 +1,101 @@
 /*Обнуление*/
-*{padding: 0;margin: 0;border: 0;}
-*,*::before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
-input,button,textarea{font-family: inherit;}
-input::-ms-clear{display: none;}
-button{cursor:pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
 /*------------------------*/
 
-body{
+body {
     background: #668ba5;
     font-family: 'Lato', sans-serif;
 }
 
-.container{
+.container {
     margin: 0 auto;
     padding: 0 30px;
     /* padding: 0 115px; */
@@ -29,22 +103,22 @@ body{
     /* max-width: 1315px; */
 }
 
-.header{
+.header {
     height: 100vh;
     width: 100%;
 }
 
-.header__slider{
+.header__slider {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     height: 100%;
     width: 100%;
-    background: url('../img/header_bg.jpg')50% 50%/cover  no-repeat;
+    background: url('../img/header_bg.jpg')50% 50%/cover no-repeat;
 }
 
-.slider__inner{
+.slider__inner {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -55,7 +129,7 @@ body{
     color: #fff;
 }
 
-.slider__btn{
+.slider__btn {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -68,15 +142,15 @@ body{
     background-color: #4bc9ff3f;
 }
 
-.slider__btn:nth-child(1){
+.slider__btn:nth-child(1) {
     left: -85px;
 }
 
-.slider__btn:nth-child(2){
+.slider__btn:nth-child(2) {
     right: -85px;
 }
 
-.slider__title{
+.slider__title {
     margin: 0 0 24px 0;
     width: 630px;
     font-size: 48px;
@@ -85,25 +159,26 @@ body{
     color: #ffffffb2;
 }
 
-.slider__title span{
+.slider__title span {
     font-weight: 700;
     color: #fff;
 }
 
-.slider__text{
+.slider__text {
+    margin: 0 0 40px 0;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.2;
     width: 630px;
 }
 
-.header--topBar{
+.header--topBar {
     background: #0707074d;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
 }
 
-.topBar__inner{
+.topBar__inner {
     position: relative;
     display: flex;
     height: 100px;
@@ -111,7 +186,7 @@ body{
     align-items: center;
 }
 
-.logo{
+.logo {
     margin: 0 20px 0 0;
     display: flex;
     align-items: center;
@@ -121,27 +196,28 @@ body{
     background: url('../img/logo_wave.png')54px 20px no-repeat;
 }
 
-.logo span{
+.logo span {
     color: #ffffff;
 }
 
-.nav{
+.nav {
     display: flex;
     width: 690px;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav__item{
+.nav__item {
     text-transform: uppercase;
     color: #fff;
 }
 
-.nav__item--active{
+.nav__item--active {
     position: relative;
     color: #4bcaff;
 }
-.nav__item--active::before{
+
+.nav__item--active::before {
     position: absolute;
     content: '';
     top: -43px;
@@ -152,7 +228,7 @@ body{
 
 /* BURGER =================== */
 
-.burger__btn{
+.burger__btn {
     position: relative;
     top: 0;
     right: 0;
@@ -162,7 +238,8 @@ body{
     background: #4bcaff;
     display: none;
 }
-.burger__btn span{
+
+.burger__btn span {
     position: absolute;
     content: '';
     left: 50%;
@@ -175,29 +252,29 @@ body{
     transition: .3s;
 }
 
-.burger__btn span:first-child{
+.burger__btn span:first-child {
     top: calc(50% - 7px);
 }
 
-.burger__btn span:last-child{
+.burger__btn span:last-child {
     top: calc(50% + 7px);
 }
 
-.burger__btn--active span:nth-child(2){
+.burger__btn--active span:nth-child(2) {
     opacity: 0;
 }
 
-.burger__btn--active span:first-child{
+.burger__btn--active span:first-child {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.burger__btn--active span:last-child{
+.burger__btn--active span:last-child {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.burger__menu{
+.burger__menu {
     display: none;
     position: absolute;
     padding: 100px 0;
@@ -212,40 +289,68 @@ body{
     transition: .3s;
 }
 
-.burger__menu--active{
+.burger__menu--active {
     opacity: 1;
     width: 100%;
     height: 100%;
-    
+
     background: #070707d7;
 }
 
-/* .slider__inner-btns{
-
+.slider__inner-btns {
+    margin: 0 0 49px 0;
+    width: 630px;
 }
 
-.btn{
+.slider__inner-btns .btn:first-child {
+    margin: 0 40px 0 0;
+}
 
-} */
+.btn {
+    display: inline-flex;
+    width: 195px;
+    height: 65px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #4bcaff;
+    box-shadow: 0px 4px 0px 0px #277697;
+}
+
+.transparent {
+    border: 2px #fff solid;
+    background: none;
+    box-shadow: none;
+}
+
+.available {
+    width: 630px;
+}
+
+.available span img{
+    width: 20px;
+    background: #fff;
+}
 
 
- /* media ======================== */
- @media screen and (max-width: 940px){
-    .burger__btn{
-         display: block;
+
+/* media ======================== */
+@media screen and (max-width: 940px) {
+    .burger__btn {
+        display: block;
     }
-     
-    .nav{
+
+    .nav {
         display: none;
     }
 
-    .nav__item--active::before{
+    .nav__item--active::before {
         top: -5px;
     }
 
-    .burger__menu{
+    .burger__menu {
         display: flex;
     }
 
- }
- 
+}
