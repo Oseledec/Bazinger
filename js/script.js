@@ -7,4 +7,11 @@ burgerBtn.addEventListener('click', () =>{
     burgerMenu.classList.toggle('burger__menu--active');
 });
 
-let body = document
+// Removing active burger menu on screen change more than 940px
+let header = document.querySelector('.header');
+addEventListener('resize', () => {
+    if (header.offsetWidth > 940) {
+        burgerBtn.classList.remove('burger__btn--active');
+        burgerMenu.classList.remove('burger__menu--active');
+    } 
+});
